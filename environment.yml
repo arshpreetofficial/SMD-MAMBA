@@ -1,0 +1,24 @@
+name: smd-mamba
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - pytorch-cuda=12.1
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - pip
+  - pip:
+      - nibabel
+      - SimpleITK
+      - einops
+      - opencv-python
+      - umap-learn
