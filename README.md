@@ -33,7 +33,7 @@ SMD-Mamba/
 ├── docs/
 │   ├── METHODS_SUMMARY.md
 │   ├── RESULTS_TABLES.md
-│   └── figures/
+│   
 ├── scripts/
 │   ├── run_train_adni.sh
 │   ├── run_external_oasis.sh
@@ -62,8 +62,6 @@ SMD-Mamba/
 │       └── pareto_frontier.py
 ├── requirements.txt
 ├── environment.yml
-├── CITATION.cff
-├── LICENSE
 └── setup.py
 ```
 
