@@ -1,0 +1,6 @@
+subject_id,image_path,label,site,scanner
+ADNI_001,/path/to/ADNI_001_T1w.nii.gz,0,ADNI,Siemens
+ADNI_002,/path/to/ADNI_002_T1w.nii.gz,1,ADNI,GE
+ADNI_003,/path/to/ADNI_003_T1w.nii.gz,2,ADNI,Philips
+OASIS_001,/path/to/OASIS_001_T1w.nii.gz,0,OASIS,Siemens
+OASIS_002,/path/to/OASIS_002_T1w.nii.gz,2,OASIS,GE

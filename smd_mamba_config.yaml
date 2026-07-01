@@ -1,0 +1,31 @@
+project_name: SMD-Mamba
+seed: 42
+
+data:
+  input_size: [128, 128, 128]
+  in_channels: 1
+  num_classes: 3
+  class_names: ["CN", "MCI", "AD"]
+  normalization: "zscore"
+
+model:
+  patch_size: 8
+  embed_dim: 96
+  state_dim: 16
+  expansion_factor: 2
+  num_blocks: 4
+  dropout: 0.10
+  low_pass_cutoff: 0.18
+  high_pass_cutoff: 0.18
+
+training:
+  epochs: 150
+  batch_size: 8
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  optimizer: "adamw"
+  scheduler: "cosine"
+  warmup_epochs: 10
+  lambda_ortho: 0.1
+  mixed_precision: true
+  early_stopping_patience: 25
