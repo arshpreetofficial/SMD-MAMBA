@@ -30,18 +30,12 @@ SMD-Mamba addresses scanner-induced domain shift by combining:
 SMD-Mamba/
 ├── configs/smd_mamba_config.yaml
 ├── data/sample_manifest.csv
-├── docs/
-│   ├── METHODS_SUMMARY.md
-│   ├── RESULTS_TABLES.md
-│   
 ├── scripts/
 │   ├── run_train_adni.sh
 │   ├── run_external_oasis.sh
 │   ├── run_cross_validation.sh
-│   └── generate_all_figures.sh
 ├── src/smd_mamba/
-│   ├── data/
-│   │   ├── dataset.py
+│   ├── preprocessing/
 │   │   └── preprocessing.py
 │   ├── models/
 │   │   ├── fddm.py
@@ -124,26 +118,3 @@ L_total = L_CE + lambda_ortho * L_ortho
 L_ortho = ||Z_morph^T Z_style||_F^2
 ```
 
-## Reported Result Summary
-
-| Model | ADNI ACC (%) | OASIS ACC (%) | Drop (%) |
-|---|---:|---:|---:|
-| 3D-ResNet50 | 88.54 | 71.08 | 17.46 |
-| 3D-ViT | 94.12 | 79.15 | 14.97 |
-| 3D-cGAN | 91.56 | 79.24 | 12.32 |
-| SpectroCVT-Net | 95.14 | 88.52 | 6.62 |
-| SMD-Mamba | 96.45 | 93.76 | 2.69 |
-
-## Citation
-
-```bibtex
-@article{kaur2026smdmamba,
-  title={Mitigating Scanner-Induced Domain Shift in Alzheimer's Diagnosis via Frequency-Domain Morphological Disentanglement and State Space Modeling},
-  author={Kaur, Arshpreet and Kaur, Jagdeep},
-  year={2026}
-}
-```
-
-## Disclaimer
-
-This repository is for research use only and is not a certified medical device.
